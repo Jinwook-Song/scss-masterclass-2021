@@ -8,6 +8,7 @@
 
 .box:nth-child(2) {
   margin-left: 35px;
+  background-color: red;
 }
 
 .box:nth-child(3) {
