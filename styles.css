@@ -1,5 +1,11 @@
 body {
   display: flex;
+  flex-direction: column;
+  /* Main Axis */
+  justify-content: space-around;
+  /* Cross Axis */
+  align-items: center;
+  height: 200vh;
 }
 
 .box {
