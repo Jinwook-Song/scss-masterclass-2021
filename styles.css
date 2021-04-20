@@ -1,16 +1,27 @@
-body {
+.father {
   display: flex;
-  flex-direction: column;
-  /* Main Axis */
   justify-content: space-around;
-  /* Cross Axis */
-  align-items: center;
-  height: 200vh;
+  height: 100vh;
 }
 
-.box {
+.child {
+  font-size: 50px;
   width: 200px;
   height: 200px;
   background-color: peru;
   color: white;
+}
+
+.child:nth-child(1) {
+  order: 2;
+}
+
+.child:nth-child(3) {
+  order: 3;
+  align-self: flex-end;
+}
+
+.child:nth-child(2) {
+  order: 1;
+  align-self: center;
 }
