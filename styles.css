@@ -1,24 +1,27 @@
 .grid {
   display: grid;
   gap: 5px;
-  grid-template-columns: [first-line] 100px [second-line] 100px [third-line] 100px [forth-line] 100px;
-  grid-template-rows: 50px repeat(2, 100px) 50px;
+  width: 50vw;
+  height: 50vh;
+  grid-template:
+    "header header header header" 1fr
+    "content content content nav" 2fr
+    "footer footer footer footer" 1fr / 1fr 1fr 1fr 1fr;
 }
 
 .header {
   background-color: #2ecc71;
-  grid-column: span 4;
+  grid-area: header;
 }
 .content {
   background-color: #3498db;
-  grid-column: first-line / -2;
-  grid-row: span 2;
+  grid-area: content;
 }
 .nav {
   background-color: #8e44ad;
-  grid-row: span 2;
+  grid-area: nav;
 }
 .footer {
   background-color: #f39c12;
-  grid-column: span 4;
+  grid-area: footer;
 }
